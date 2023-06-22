@@ -9,19 +9,29 @@ body {
 }
 
 .header {
-    background-color: #1f2937;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 50px 0 50px;
+    max-height: 50px;
+}
+
+.logo {
+    object-fit: scale-down;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.background {
+    background-image: url(images/pexels-damon-hall-2274725.jpg);
 }
 
 .hero {
-    background-color: #1f2937;
     display: flex;
+    justify-content: center;
 }
 
 .hero-content {
-    align-self: center;
     padding: 100px 50px;
     margin: 0;
     gap: 100px;
@@ -53,44 +63,35 @@ body {
 .info {
     display: flex;
     flex-direction: column;
+    padding: 50px 0px;
+    flex: 1 1;
 }
 
 .info-header {
     align-self: center;
-}
-
-.carousel {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-    padding: 50px;
-}
-
-.image {
-    
-    
-}
-
-.image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 .quote-section {
+    background-color: #e5e7eb;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-container {
+    flex: 1 1;
+    max-width: 500px;
     background-color: #e5e7eb;
     padding: 70px;
 }
 
 .quote {
-    flex-wrap: wrap;
 }
 
 .author {
-    align-self: flex-end;
+    text-align: right;
 }
 
 .footer {
@@ -187,8 +188,38 @@ a {
     color: #e5e7eb;
 }
 
-img {
+.hero-image > img {
     width: 100%;
     height: auto;
     object-fit: scale-down;
+}
+
+.image > img {
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 50px 20px 50px;
+}
+
+.image {
+    aspect-ratio: 1/1;
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.image-text {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1f2937;
 }
