@@ -107,7 +107,7 @@ body {
 .right-links {
     color: #e5e7eb;
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 .hero-header {
@@ -128,7 +128,7 @@ body {
 }
 
 .modal {
-    background-color: #3882F6;
+    background-color: #28b9ad;
     border-radius: 10px;
     display: flex;
     flex: 1;
@@ -153,7 +153,7 @@ body {
 }
 
 .sign-up {
-    background-color: #3882F6;
+    background-color: inherit;
     border: 2px solid #e5e7eb;
     border-radius: 15px;
     padding: 3px 10px;
@@ -162,12 +162,13 @@ body {
 }
 
 .hero-button {
-    background-color: #3882F6;
+    background-color: #38caf6;
     border: none;
-    border-radius: 15px;
-    padding: 3px 10px;
-    color: #f9faf8;
-    font-weight: 900;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: #294246;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .footer {
@@ -184,8 +185,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: #f9faf8;
     color: #e5e7eb;
+}
+
+button > a {
+    color: inherit;
 }
 
 .hero-image > img {
@@ -195,7 +199,7 @@ a {
 }
 
 .image > img {
-    max-width: 300px;
+    max-width: 400px;
     object-fit: cover;
 }
 
